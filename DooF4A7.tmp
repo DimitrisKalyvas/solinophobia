@@ -1,0 +1,264 @@
+[gd_scene load_steps=21 format=3 uid="uid://em85sxe4c3eg"]
+
+[ext_resource type="Script" path="res://StaticBody3D.gd" id="1_4jihv"]
+[ext_resource type="AudioStream" uid="uid://brc5w60tn0ytc" path="res://Sounds/Door/DoorOpen1.wav" id="2_gw5k5"]
+[ext_resource type="AudioStream" uid="uid://mr72ljut5br0" path="res://Sounds/Door/DoorClose1.wav" id="2_tosjy"]
+[ext_resource type="Texture2D" uid="uid://wqr6asodqydw" path="res://ObjectTextures/DoorSimple/Door1.png" id="2_w3kb0"]
+[ext_resource type="AudioStream" uid="uid://fsjkae1wiut2" path="res://Sounds/Door/DoorOpen2.wav" id="3_cagqs"]
+[ext_resource type="AudioStream" uid="uid://bc8b0sbr137d3" path="res://Sounds/Door/DoorClose2.wav" id="3_h5s2h"]
+[ext_resource type="AudioStream" uid="uid://conq824rl8a0y" path="res://Sounds/Door/DoorOpen3.wav" id="4_3ehco"]
+[ext_resource type="AudioStream" uid="uid://dliumkj8b704r" path="res://Sounds/Door/DoorOpen4.wav" id="5_knh62"]
+[ext_resource type="AudioStream" uid="uid://d1mfega75xqrw" path="res://Sounds/Door/DoorOpen5.wav" id="6_yrbok"]
+[ext_resource type="AudioStream" uid="uid://pc3ceaxte5qf" path="res://Sounds/Door/DoorOpen6.wav" id="7_ki617"]
+[ext_resource type="AudioStream" uid="uid://dqfup4itraq7k" path="res://Sounds/Door/DoorOpen7.wav" id="8_ilgre"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63m31"]
+albedo_texture = ExtResource("2_w3kb0")
+uv1_scale = Vector3(2.865, 2, 1.255)
+uv1_offset = Vector3(0.015, 0, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l6m6n"]
+size = Vector3(1.25, 2.45, 0.1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_juh34"]
+data = PackedVector3Array(-0.625, 1.225, 0.05, 0.625, 1.225, 0.05, -0.625, -1.225, 0.05, 0.625, 1.225, 0.05, 0.625, -1.225, 0.05, -0.625, -1.225, 0.05, 0.625, 1.225, -0.05, -0.625, 1.225, -0.05, 0.625, -1.225, -0.05, -0.625, 1.225, -0.05, -0.625, -1.225, -0.05, 0.625, -1.225, -0.05, 0.625, 1.225, 0.05, 0.625, 1.225, -0.05, 0.625, -1.225, 0.05, 0.625, 1.225, -0.05, 0.625, -1.225, -0.05, 0.625, -1.225, 0.05, -0.625, 1.225, -0.05, -0.625, 1.225, 0.05, -0.625, -1.225, -0.05, -0.625, 1.225, 0.05, -0.625, -1.225, 0.05, -0.625, -1.225, -0.05, 0.625, 1.225, 0.05, -0.625, 1.225, 0.05, 0.625, 1.225, -0.05, -0.625, 1.225, 0.05, -0.625, 1.225, -0.05, 0.625, 1.225, -0.05, -0.625, -1.225, 0.05, 0.625, -1.225, 0.05, -0.625, -1.225, -0.05, 0.625, -1.225, 0.05, 0.625, -1.225, -0.05, -0.625, -1.225, -0.05)
+
+[sub_resource type="Animation" id="Animation_a4r5c"]
+resource_name = "Close"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticBody3D:rotation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticBody3D:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(3.14159, -0.25, 0, 0.25, 0, 1.5708, -0.25, 1.515, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticBody3D:rotation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StaticBody3D/Closing:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ai7bh"]
+streams_count = 7
+stream_0/stream = ExtResource("2_gw5k5")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("3_cagqs")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("4_3ehco")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("5_knh62")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("6_yrbok")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("7_ki617")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("8_ilgre")
+stream_6/weight = 1.0
+
+[sub_resource type="Animation" id="Animation_848g2"]
+resource_name = "Open"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticBody3D:rotation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticBody3D:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1.5708, -0.25, 0, 0.25, 1.31, 3.14159, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticBody3D:rotation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StaticBody3D/Opening:stream")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("AudioStreamRandomizer_ai7bh")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("StaticBody3D/Opening:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_y0gp8"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticBody3D:rotation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticBody3D:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticBody3D:rotation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StaticBody3D/Opening:stream")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("AudioStreamRandomizer_ai7bh")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("StaticBody3D/Opening:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("StaticBody3D/Closing:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3bgq8"]
+_data = {
+"Close": SubResource("Animation_a4r5c"),
+"Open": SubResource("Animation_848g2"),
+"RESET": SubResource("Animation_y0gp8")
+}
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_r0yp5"]
+streams_count = 2
+stream_0/stream = ExtResource("2_tosjy")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("3_h5s2h")
+stream_1/weight = 1.0
+
+[node name="Door" type="Node3D" groups=["Interactible"]]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["Interactible"]]
+transform = Transform3D(-3.61999e-06, 0, 1, 0, 1, 0, -1, 0, -3.61999e-06, 0, 0, 0)
+script = ExtResource("1_4jihv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" groups=["Interactible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.631778, 1.22558, 0)
+material_override = SubResource("StandardMaterial3D_63m31")
+mesh = SubResource("BoxMesh_l6m6n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" groups=["Interactible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.631778, 1.22558, 0)
+shape = SubResource("ConcavePolygonShape3D_juh34")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_3bgq8")
+}
+
+[node name="Opening" type="AudioStreamPlayer3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.24638, 1.4, -3.15981e-06)
+stream = SubResource("AudioStreamRandomizer_ai7bh")
+
+[node name="Closing" type="AudioStreamPlayer3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.24638, 1.4, -3.15981e-06)
+stream = SubResource("AudioStreamRandomizer_r0yp5")

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dyyms452pvkd1"
+path="res://.godot/imported/493385__joao_janz__clothes-shaking-movement-2_9.wav-702be7d8c6ef0daca093fc85bbd57538.sample"
+
+[deps]
+
+source_file="res://Sounds/Cloth Sounds/493385__joao_janz__clothes-shaking-movement-2_9.wav"
+dest_files=["res://.godot/imported/493385__joao_janz__clothes-shaking-movement-2_9.wav-702be7d8c6ef0daca093fc85bbd57538.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

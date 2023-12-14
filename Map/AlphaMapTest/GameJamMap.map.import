@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://cwtyxr15h7ku7"
+path="res://.godot/imported/GameJamMap.map-b5ea3ccf2689001c100db684893f8f39.tres"
+
+[deps]
+
+source_file="res://Map/AlphaMapTest/GameJamMap.map"
+dest_files=["res://.godot/imported/GameJamMap.map-b5ea3ccf2689001c100db684893f8f39.tres"]
+
+[params]
+

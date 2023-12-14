@@ -1,0 +1,133 @@
+[gd_scene load_steps=25 format=3 uid="uid://coep8t015d18x"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_1m4vs"]
+[ext_resource type="ArrayMesh" uid="uid://rdqk5ce06jhc" path="res://Weapons/ShotgunBody.obj" id="2_e2x3j"]
+[ext_resource type="AudioStream" uid="uid://5myv4g5gjq82" path="res://Sounds/Footsteps/Concrete/HardStep3.wav" id="2_kajnp"]
+[ext_resource type="AudioStream" uid="uid://b83288litj106" path="res://Sounds/Footsteps/Concrete/HardStep4.wav" id="3_xvevl"]
+[ext_resource type="AudioStream" uid="uid://brwcw1swc44ij" path="res://Sounds/Footsteps/Concrete/HardStep5.wav" id="4_3ap4e"]
+[ext_resource type="AudioStream" uid="uid://djrjdpesk8a7x" path="res://Sounds/Footsteps/Concrete/HardStep6.wav" id="5_82ymy"]
+[ext_resource type="AudioStream" uid="uid://fid33yvgoyxg" path="res://Sounds/Cloth Sounds/493291__joao_janz__clothes-shaking-movement-1_9.wav" id="6_6c8ah"]
+[ext_resource type="AudioStream" uid="uid://da5ojs50aluka" path="res://Sounds/Cloth Sounds/493426__joao_janz__clothes-shaking-movement-4_11.wav" id="11_750bn"]
+[ext_resource type="AudioStream" uid="uid://l0jkxmp6028v" path="res://Sounds/Cloth Sounds/493428__joao_janz__clothes-shaking-movement-4_1.wav" id="12_8ns7d"]
+[ext_resource type="AudioStream" uid="uid://bheknvavjjs35" path="res://Sounds/Cloth Sounds/SitDown2 (1).wav" id="15_okbic"]
+[ext_resource type="AudioStream" uid="uid://dowrhx8cvkwuv" path="res://Sounds/Cloth Sounds/493296__joao_janz__clothes-shaking-movement-1_4.wav" id="15_xb566"]
+[ext_resource type="AudioStream" uid="uid://dcgoxitlvl5p0" path="res://Sounds/Cloth Sounds/493329__joao_janz__clothes-shaking-movement-1_1.wav" id="17_2tfrr"]
+[ext_resource type="AudioStream" uid="uid://cng425lmanigy" path="res://Sounds/Cloth Sounds/SitDown2 (3).wav" id="17_deadi"]
+[ext_resource type="AudioStream" uid="uid://dqi8id3427nl6" path="res://Sounds/Cloth Sounds/493341__joao_janz__clothes-shaking-movement-3_4.wav" id="18_qteij"]
+[ext_resource type="AudioStream" uid="uid://bntqv344nngec" path="res://Sounds/Cloth Sounds/493358__joao_janz__clothes-shaking-movement-3_6.wav" id="19_vam4u"]
+[ext_resource type="AudioStream" uid="uid://bafk3pjikdhdq" path="res://Sounds/Cloth Sounds/493360__joao_janz__clothes-shaking-movement-2_8.wav" id="20_gxyi1"]
+[ext_resource type="AudioStream" uid="uid://dyyms452pvkd1" path="res://Sounds/Cloth Sounds/493385__joao_janz__clothes-shaking-movement-2_9.wav" id="22_06f1f"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wydro"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wwco"]
+cull_mode = 2
+albedo_color = Color(0.254902, 0.254902, 0.254902, 1)
+metallic_specular = 0.0
+roughness = 0.55
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xmyd7"]
+blend_mode = 2
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_5ep4l"]
+streams_count = 4
+random_pitch = 1.0
+stream_0/stream = ExtResource("2_kajnp")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("3_xvevl")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("4_3ap4e")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("5_82ymy")
+stream_3/weight = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fpqa3"]
+height = 1.15
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_sepj4"]
+streams_count = 8
+random_pitch = 1.0
+stream_0/stream = ExtResource("6_6c8ah")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("12_8ns7d")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("11_750bn")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("15_xb566")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("17_2tfrr")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("18_qteij")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("19_vam4u")
+stream_6/weight = 1.0
+stream_7/stream = ExtResource("20_gxyi1")
+stream_7/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_d05d1"]
+streams_count = 3
+playback_mode = 1
+stream_0/stream = ExtResource("15_okbic")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("17_deadi")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("22_06f1f")
+stream_2/weight = 1.0
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_1m4vs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_wydro")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.67939, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+far = 120000.0
+
+[node name="RayCast3D" type="RayCast3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+target_position = Vector3(0, -2, 0)
+
+[node name="RayCast3D2" type="RayCast3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
+
+[node name="HandPosition" type="Node3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.435282, -0.745483)
+
+[node name="HandRig" type="Node3D" parent="Head/HandPosition"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/HandPosition/HandRig"]
+transform = Transform3D(-0.393, 0, 0, 0, 0.393, 0, 0, 0, 0.393, 0.445, 0.075, -0.135)
+mesh = ExtResource("2_e2x3j")
+surface_material_override/0 = SubResource("StandardMaterial3D_6wwco")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_xmyd7")
+offset_left = -957.0
+offset_top = -596.0
+offset_right = 2180.0
+offset_bottom = 1313.0
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="FootstepStreamer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_5ep4l")
+
+[node name="CroutchCollision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0)
+shape = SubResource("CapsuleShape3D_fpqa3")
+disabled = true
+
+[node name="ClothStreamer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_sepj4")
+volume_db = -10.0
+pitch_scale = 1.57
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_d05d1")
+
+[connection signal="finished" from="FootstepStreamer" to="." method="_on_audio_stream_player_finished"]

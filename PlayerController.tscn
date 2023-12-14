@@ -1,0 +1,116 @@
+[gd_scene load_steps=23 format=3 uid="uid://cp5qhfkxeumsi"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_gbj44"]
+[ext_resource type="AudioStream" uid="uid://5myv4g5gjq82" path="res://Sounds/Footsteps/Concrete/HardStep3.wav" id="2_1sest"]
+[ext_resource type="AudioStream" uid="uid://b83288litj106" path="res://Sounds/Footsteps/Concrete/HardStep4.wav" id="3_orcj6"]
+[ext_resource type="AudioStream" uid="uid://brwcw1swc44ij" path="res://Sounds/Footsteps/Concrete/HardStep5.wav" id="4_3owvs"]
+[ext_resource type="AudioStream" uid="uid://djrjdpesk8a7x" path="res://Sounds/Footsteps/Concrete/HardStep6.wav" id="5_atfbi"]
+[ext_resource type="AudioStream" uid="uid://fid33yvgoyxg" path="res://Sounds/Cloth Sounds/493291__joao_janz__clothes-shaking-movement-1_9.wav" id="6_jfhpa"]
+[ext_resource type="AudioStream" uid="uid://l0jkxmp6028v" path="res://Sounds/Cloth Sounds/493428__joao_janz__clothes-shaking-movement-4_1.wav" id="7_fr3ig"]
+[ext_resource type="AudioStream" uid="uid://da5ojs50aluka" path="res://Sounds/Cloth Sounds/493426__joao_janz__clothes-shaking-movement-4_11.wav" id="8_dykuk"]
+[ext_resource type="AudioStream" uid="uid://dowrhx8cvkwuv" path="res://Sounds/Cloth Sounds/493296__joao_janz__clothes-shaking-movement-1_4.wav" id="9_67h8x"]
+[ext_resource type="AudioStream" uid="uid://dcgoxitlvl5p0" path="res://Sounds/Cloth Sounds/493329__joao_janz__clothes-shaking-movement-1_1.wav" id="10_40ihl"]
+[ext_resource type="AudioStream" uid="uid://dqi8id3427nl6" path="res://Sounds/Cloth Sounds/493341__joao_janz__clothes-shaking-movement-3_4.wav" id="11_yexwg"]
+[ext_resource type="AudioStream" uid="uid://bntqv344nngec" path="res://Sounds/Cloth Sounds/493358__joao_janz__clothes-shaking-movement-3_6.wav" id="12_qaaur"]
+[ext_resource type="AudioStream" uid="uid://bafk3pjikdhdq" path="res://Sounds/Cloth Sounds/493360__joao_janz__clothes-shaking-movement-2_8.wav" id="13_8ommu"]
+[ext_resource type="AudioStream" uid="uid://bheknvavjjs35" path="res://Sounds/Cloth Sounds/SitDown2 (1).wav" id="14_47iol"]
+[ext_resource type="AudioStream" uid="uid://cng425lmanigy" path="res://Sounds/Cloth Sounds/SitDown2 (3).wav" id="15_utytu"]
+[ext_resource type="AudioStream" uid="uid://dyyms452pvkd1" path="res://Sounds/Cloth Sounds/493385__joao_janz__clothes-shaking-movement-2_9.wav" id="16_t2aew"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wydro"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xmyd7"]
+blend_mode = 2
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_5ep4l"]
+streams_count = 4
+random_pitch = 1.0
+stream_0/stream = ExtResource("2_1sest")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("3_orcj6")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("4_3owvs")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("5_atfbi")
+stream_3/weight = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fpqa3"]
+height = 1.15
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_sepj4"]
+streams_count = 8
+random_pitch = 1.0
+stream_0/stream = ExtResource("6_jfhpa")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("7_fr3ig")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("8_dykuk")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("9_67h8x")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("10_40ihl")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("11_yexwg")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("12_qaaur")
+stream_6/weight = 1.0
+stream_7/stream = ExtResource("13_8ommu")
+stream_7/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_d05d1"]
+streams_count = 3
+playback_mode = 1
+stream_0/stream = ExtResource("14_47iol")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("15_utytu")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("16_t2aew")
+stream_2/weight = 1.0
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_gbj44")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_wydro")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.67939, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+far = 120000.0
+
+[node name="RayCast3D" type="RayCast3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+target_position = Vector3(0, -2, 0)
+
+[node name="RayCast3D2" type="RayCast3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_xmyd7")
+offset_left = -957.0
+offset_top = -596.0
+offset_right = 2180.0
+offset_bottom = 1313.0
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="FootstepStreamer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_5ep4l")
+
+[node name="CroutchCollision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0)
+shape = SubResource("CapsuleShape3D_fpqa3")
+disabled = true
+
+[node name="ClothStreamer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_sepj4")
+volume_db = -10.0
+pitch_scale = 1.57
+
+[node name="Effects" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_d05d1")
+
+[connection signal="finished" from="FootstepStreamer" to="." method="_on_audio_stream_player_finished"]

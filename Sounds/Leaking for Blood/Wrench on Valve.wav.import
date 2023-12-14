@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://btik05bgmv4f7"
+path="res://.godot/imported/Wrench on Valve.wav-4d5029fb176879be148f93e9a87048e4.sample"
+
+[deps]
+
+source_file="res://Sounds/Leaking for Blood/Wrench on Valve.wav"
+dest_files=["res://.godot/imported/Wrench on Valve.wav-4d5029fb176879be148f93e9a87048e4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

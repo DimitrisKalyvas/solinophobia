@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b820iuef17jhc"
+path="res://.godot/imported/Monster Voice Breathing.wav-a08fed1b0741159ddd64f94c466474ea.sample"
+
+[deps]
+
+source_file="res://Sounds/Leaking for Blood/Monster Voice Breathing.wav"
+dest_files=["res://.godot/imported/Monster Voice Breathing.wav-a08fed1b0741159ddd64f94c466474ea.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

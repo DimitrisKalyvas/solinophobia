@@ -1,0 +1,196 @@
+[gd_scene load_steps=20 format=3 uid="uid://db2h3t17k37pe"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_1d73w"]
+[ext_resource type="Material" uid="uid://bi1h4xe7msjwi" path="res://Materials/Pink.tres" id="3_irgfk"]
+[ext_resource type="Texture2D" uid="uid://dcbbyfcp3p5o0" path="res://Textures/Prototype/GrassCastle.png" id="4_7pt1i"]
+[ext_resource type="Script" path="res://Arm2.gd" id="6_cnpcc"]
+[ext_resource type="Script" path="res://Hand1.gd" id="6_njopw"]
+[ext_resource type="Texture2D" uid="uid://mkkhfics86kd" path="res://Textures/Prototype/Haiiii.png" id="6_rg650"]
+[ext_resource type="Script" path="res://Boss.gd" id="7_vfhwm"]
+[ext_resource type="ArrayMesh" uid="uid://cdd2jo2xw2o0x" path="res://RobotBossParts/Head.obj" id="8_115qe"]
+[ext_resource type="ArrayMesh" uid="uid://b0iu0q1l8gd" path="res://RobotBossParts/Body.obj" id="8_loobe"]
+[ext_resource type="ArrayMesh" uid="uid://c7rdsp1byv7t1" path="res://RobotBossParts/Neck.obj" id="9_nsc0w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iwa6f"]
+albedo_texture = ExtResource("4_7pt1i")
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 2
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5lq0h"]
+sky_top_color = Color(0.54902, 0.623529, 0.862745, 1)
+sky_horizon_color = Color(0.67451, 0.619608, 0.803922, 1)
+
+[sub_resource type="Sky" id="Sky_f6bkd"]
+sky_material = SubResource("ProceduralSkyMaterial_5lq0h")
+
+[sub_resource type="Environment" id="Environment_g2h84"]
+background_mode = 2
+sky = SubResource("Sky_f6bkd")
+tonemap_mode = 2
+ssao_enabled = true
+ssil_enabled = true
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bae2c"]
+no_depth_test = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xc2g5"]
+material = SubResource("StandardMaterial3D_bae2c")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wydro"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nebq6"]
+no_depth_test = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_aowjs"]
+material = SubResource("StandardMaterial3D_nebq6")
+
+[node name="World" type="Node3D"]
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0547905, -1.87645, 40.3205)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 0.967175, 0.254112, 0, -0.254112, 0.967175, -15.2155, -1.87645, 40.3205)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Map"]
+transform = Transform3D(0.472243, 0.223992, -0.852534, 0, 0.967175, 0.254112, 0.881468, -0.120003, 0.456742, -17.2505, -1.87645, 58.7611)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Map"]
+transform = Transform3D(0.472243, 0.223992, -0.852534, 0, 0.967175, 0.254112, 0.881468, -0.120003, 0.456742, -21.8085, -7.0771, 83.7318)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 62.4636)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.9565, 62.3699)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.9565, 82.9215)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.9565, 102.878)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20.5895, 141.507)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20.5895, 161.511)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 0.832022, 0.554743, 0, -0.554743, 0.832022, 0.1677, -20.7761, 184.387)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 0.832022, 0.554743, 0, -0.554743, 0.832022, 0.1677, -20.7761, 206.772)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Map"]
+transform = Transform3D(0.354993, 0.518612, -0.777831, 0, 0.832022, 0.554743, 0.934869, -0.19693, 0.295362, -10.9736, -20.7761, 226.825)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Map"]
+transform = Transform3D(0.284171, 0.0219764, -0.958521, 0.0012488, 0.999728, 0.0232916, 0.958773, -0.00781587, 0.284066, -26.9815, -20.7761, 226.825)
+use_collision = true
+size = Vector3(9.85085, 3.69682, 7.9693)
+material = ExtResource("3_irgfk")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Map"]
+material_override = SubResource("StandardMaterial3D_iwa6f")
+use_collision = true
+size = Vector3(52.2363, 0.002, 59.575)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Map"]
+environment = SubResource("Environment_g2h84")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Map"]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_1d73w")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0100293, 1, -0.00358152)
+mesh = SubResource("CapsuleMesh_xc2g5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_wydro")
+
+[node name="Head" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.67939, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Head"]
+
+[node name="Arm1" type="MeshInstance3D" parent="Player/Head/Camera3D" node_paths=PackedStringArray("player")]
+transform = Transform3D(-0.30384, 0.0760651, -0.0295494, 0.45913, -9.24836e-10, -0.167168, -0.834793, -0.0276854, -0.0811863, 0.7, -0.66943, -0.6)
+mesh = SubResource("BoxMesh_aowjs")
+skeleton = NodePath("../..")
+script = ExtResource("6_njopw")
+player = NodePath("../../..")
+
+[node name="Sprite3D" type="Sprite3D" parent="Player/Head/Camera3D/Arm1"]
+transform = Transform3D(0.130798, 0, 0, 2.98023e-08, 1.76334, 4.76837e-07, 8.9407e-08, 5.96046e-08, 3.21032, -0.524695, 0.0118513, 1.58461)
+billboard = 2
+texture = ExtResource("6_rg650")
+
+[node name="Arm2" type="MeshInstance3D" parent="Player/Head/Camera3D" node_paths=PackedStringArray("player")]
+transform = Transform3D(0.305613, 0.0760147, 0.0296022, 0.459032, -4.54491e-05, -0.167178, -0.8342, 0.0278234, -0.0811476, -0.7, -0.66943, -0.6)
+visible = false
+mesh = SubResource("BoxMesh_aowjs")
+skeleton = NodePath("../..")
+script = ExtResource("6_cnpcc")
+player = NodePath("../../..")
+
+[node name="Boss" type="StaticBody3D" parent="." node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.34799, -11.2095)
+script = ExtResource("7_vfhwm")
+player = NodePath("../Player")
+
+[node name="Body" type="MeshInstance3D" parent="Boss"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.71256, -0.530017)
+mesh = ExtResource("8_loobe")
+skeleton = NodePath("../..")
+
+[node name="Neck" type="MeshInstance3D" parent="Boss/Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.94712, 0.557463)
+mesh = ExtResource("9_nsc0w")
+
+[node name="Head" type="MeshInstance3D" parent="Boss/Body/Neck"]
+transform = Transform3D(-1, 0, 0, 0, -1, 2.98023e-08, 0, -2.98023e-08, -1, 0, 1.76544, -0.0274467)
+mesh = ExtResource("8_115qe")
+skeleton = NodePath("")

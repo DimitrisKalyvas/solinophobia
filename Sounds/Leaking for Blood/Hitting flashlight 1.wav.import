@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c4ulpfq5ju67t"
+path="res://.godot/imported/Hitting flashlight 1.wav-697b2f6b0180e3817af31bede2f88b0a.sample"
+
+[deps]
+
+source_file="res://Sounds/Leaking for Blood/Hitting flashlight 1.wav"
+dest_files=["res://.godot/imported/Hitting flashlight 1.wav-697b2f6b0180e3817af31bede2f88b0a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

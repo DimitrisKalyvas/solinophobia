@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://db2h3t17k37pe"]
+
+[ext_resource type="PackedScene" uid="uid://coep8t015d18x" path="res://player.tscn" id="1_r25o6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yaari"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7etb0"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.339283, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(18.8001, 0, 0, 0, 1, 0, 0, 0, 14.5011, 0, 0, 0)
+mesh = SubResource("BoxMesh_yaari")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(18.8001, 0, 0, 0, 1, 0, 0, 0, 14.5011, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_7etb0")
+
+[node name="Player" parent="." instance=ExtResource("1_r25o6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.525778, 1.66429, 0.969002)
