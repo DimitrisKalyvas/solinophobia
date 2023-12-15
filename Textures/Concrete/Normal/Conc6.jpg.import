@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uqurp7gotclh"
-path="res://.godot/imported/Conc6.jpg-ce17906a552ff52d9856a59fa6ccf91a.ctex"
+path="res://.godot/imported/Conc6.jpg-9477f19266b2a8d29d9598f511eec4c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Normal/Conc6.jpg"
-dest_files=["res://.godot/imported/Conc6.jpg-ce17906a552ff52d9856a59fa6ccf91a.ctex"]
+source_file="res://textures/Concrete/Normal/Conc6.jpg"
+dest_files=["res://.godot/imported/Conc6.jpg-9477f19266b2a8d29d9598f511eec4c9.ctex"]
 
 [params]
 

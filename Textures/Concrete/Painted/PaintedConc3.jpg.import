@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://islvgoo53g5i"
-path="res://.godot/imported/PaintedConc3.jpg-29f8504af3a9788512c2cf0c071d09a0.ctex"
+path="res://.godot/imported/PaintedConc3.jpg-bb903583a7107a3ac97ee78bf94e780c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Painted/PaintedConc3.jpg"
-dest_files=["res://.godot/imported/PaintedConc3.jpg-29f8504af3a9788512c2cf0c071d09a0.ctex"]
+source_file="res://textures/Concrete/Painted/PaintedConc3.jpg"
+dest_files=["res://.godot/imported/PaintedConc3.jpg-bb903583a7107a3ac97ee78bf94e780c.ctex"]
 
 [params]
 

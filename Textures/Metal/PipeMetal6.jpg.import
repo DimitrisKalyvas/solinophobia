@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjjy5wxss1bb3"
-path="res://.godot/imported/PipeMetal6.jpg-ea337474a4d49cf8778de70dc457e669.ctex"
+path="res://.godot/imported/PipeMetal6.jpg-65d85f5190b129bdfd8c32d4bcce2e42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Metal/PipeMetal6.jpg"
-dest_files=["res://.godot/imported/PipeMetal6.jpg-ea337474a4d49cf8778de70dc457e669.ctex"]
+source_file="res://textures/Metal/PipeMetal6.jpg"
+dest_files=["res://.godot/imported/PipeMetal6.jpg-65d85f5190b129bdfd8c32d4bcce2e42.ctex"]
 
 [params]
 

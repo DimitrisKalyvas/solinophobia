@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yg87ricav2r8"
-path="res://.godot/imported/PureRust.png-d6cf3e355e5f335db4a5ed39edb5228d.ctex"
+path="res://.godot/imported/PureRust.png-7f73a73e068ff49bafe84cdb88fcec81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Metal/PureRust.png"
-dest_files=["res://.godot/imported/PureRust.png-d6cf3e355e5f335db4a5ed39edb5228d.ctex"]
+source_file="res://textures/Metal/PureRust.png"
+dest_files=["res://.godot/imported/PureRust.png-7f73a73e068ff49bafe84cdb88fcec81.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://donfcoxwt2esb"
-path="res://.godot/imported/DirtyPlaster1Seamless.png-abe149952837b284f1b54042c0ae3295.ctex"
+path="res://.godot/imported/DirtyPlaster1Seamless.png-02971eb24211d1940bbb55b3a28bd619.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Plaster/Dirty/DirtyPlaster1Seamless.png"
-dest_files=["res://.godot/imported/DirtyPlaster1Seamless.png-abe149952837b284f1b54042c0ae3295.ctex"]
+source_file="res://textures/Plaster/Dirty/DirtyPlaster1Seamless.png"
+dest_files=["res://.godot/imported/DirtyPlaster1Seamless.png-02971eb24211d1940bbb55b3a28bd619.ctex"]
 
 [params]
 

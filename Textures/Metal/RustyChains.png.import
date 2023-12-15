@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cti08uote6c70"
-path="res://.godot/imported/RustyChains.png-2020e6200b260a6e921f822e535618e4.ctex"
+path="res://.godot/imported/RustyChains.png-ae9505080fee58769d54e1879406bf38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Metal/RustyChains.png"
-dest_files=["res://.godot/imported/RustyChains.png-2020e6200b260a6e921f822e535618e4.ctex"]
+source_file="res://textures/Metal/RustyChains.png"
+dest_files=["res://.godot/imported/RustyChains.png-ae9505080fee58769d54e1879406bf38.ctex"]
 
 [params]
 

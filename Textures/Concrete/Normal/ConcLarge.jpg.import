@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gaxcct01pd2e"
-path="res://.godot/imported/ConcLarge.jpg-654c91e2c733bdb7763d00a577d93c01.ctex"
+path="res://.godot/imported/ConcLarge.jpg-c0b61334c71d5627caea373c4029511b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Normal/ConcLarge.jpg"
-dest_files=["res://.godot/imported/ConcLarge.jpg-654c91e2c733bdb7763d00a577d93c01.ctex"]
+source_file="res://textures/Concrete/Normal/ConcLarge.jpg"
+dest_files=["res://.godot/imported/ConcLarge.jpg-c0b61334c71d5627caea373c4029511b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nwsii4cne3lv"
-path="res://.godot/imported/CrackedConc1.jpg-0911d17e9839236e9c1c53c81796752b.ctex"
+path="res://.godot/imported/CrackedConc1.jpg-b6b0f32126981357110503c5d39dbdb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Cracked/CrackedConc1.jpg"
-dest_files=["res://.godot/imported/CrackedConc1.jpg-0911d17e9839236e9c1c53c81796752b.ctex"]
+source_file="res://textures/Concrete/Cracked/CrackedConc1.jpg"
+dest_files=["res://.godot/imported/CrackedConc1.jpg-b6b0f32126981357110503c5d39dbdb2.ctex"]
 
 [params]
 

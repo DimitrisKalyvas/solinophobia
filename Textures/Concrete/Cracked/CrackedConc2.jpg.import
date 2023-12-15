@@ -3,15 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnbh7cqvibs13"
-path="res://.godot/imported/CrackedConc2.jpg-1c5121359f36d528b171e7d3d2fe36bf.ctex"
+path.s3tc="res://.godot/imported/CrackedConc2.jpg-244082cb890659e42e84e3f91842fc1a.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Cracked/CrackedConc2.jpg"
-dest_files=["res://.godot/imported/CrackedConc2.jpg-1c5121359f36d528b171e7d3d2fe36bf.ctex"]
+source_file="res://textures/Concrete/Cracked/CrackedConc2.jpg"
+dest_files=["res://.godot/imported/CrackedConc2.jpg-244082cb890659e42e84e3f91842fc1a.s3tc.ctex"]
 
 [params]
 

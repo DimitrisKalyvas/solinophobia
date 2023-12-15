@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4t5yhqx6wj02"
-path="res://.godot/imported/DiamondPlate1.jpg-8b49e934f5683c3ce6e7dcc0e4987d49.ctex"
+path="res://.godot/imported/DiamondPlate1.jpg-91058acabe31f268d1c9656c76031604.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Metal/DiamondPlate1.jpg"
-dest_files=["res://.godot/imported/DiamondPlate1.jpg-8b49e934f5683c3ce6e7dcc0e4987d49.ctex"]
+source_file="res://textures/Metal/DiamondPlate1.jpg"
+dest_files=["res://.godot/imported/DiamondPlate1.jpg-91058acabe31f268d1c9656c76031604.ctex"]
 
 [params]
 

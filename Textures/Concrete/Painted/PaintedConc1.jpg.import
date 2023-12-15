@@ -3,15 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vyqsjq565sc4"
-path="res://.godot/imported/PaintedConc1.jpg-5c21e398c25a97d6add107fcc5e0c739.ctex"
+path.s3tc="res://.godot/imported/PaintedConc1.jpg-914e1d4cb23577a64df131340b4fdcd5.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Painted/PaintedConc1.jpg"
-dest_files=["res://.godot/imported/PaintedConc1.jpg-5c21e398c25a97d6add107fcc5e0c739.ctex"]
+source_file="res://textures/Concrete/Painted/PaintedConc1.jpg"
+dest_files=["res://.godot/imported/PaintedConc1.jpg-914e1d4cb23577a64df131340b4fdcd5.s3tc.ctex"]
 
 [params]
 

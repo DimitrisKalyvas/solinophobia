@@ -88,7 +88,7 @@ FlashlightHit={
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=2
+textures/default_filters/use_nearest_mipmap_filter=true
 textures/default_filters/anisotropic_filtering_level=3
 textures/default_filters/texture_mipmap_bias=-0.805
 anti_aliasing/quality/msaa_3d=1

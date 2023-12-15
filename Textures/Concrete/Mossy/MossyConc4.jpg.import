@@ -3,15 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmne63fg4lds1"
-path="res://.godot/imported/MossyConc4.jpg-3c5ed337ecfafbe618f0c8176d11e138.ctex"
+path.s3tc="res://.godot/imported/MossyConc4.jpg-6143874c6b598f53651ced28fa9c676d.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Mossy/MossyConc4.jpg"
-dest_files=["res://.godot/imported/MossyConc4.jpg-3c5ed337ecfafbe618f0c8176d11e138.ctex"]
+source_file="res://textures/Concrete/Mossy/MossyConc4.jpg"
+dest_files=["res://.godot/imported/MossyConc4.jpg-6143874c6b598f53651ced28fa9c676d.s3tc.ctex"]
 
 [params]
 

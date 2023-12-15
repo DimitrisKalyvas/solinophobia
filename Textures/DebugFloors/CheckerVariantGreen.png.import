@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://barton607tls3"
-path.s3tc="res://.godot/imported/CheckerVariantGreen.png-03128fbfbb51f62ca7730cc270d1b8aa.s3tc.ctex"
+path.s3tc="res://.godot/imported/CheckerVariantGreen.png-6fe7fafa2d63547074125a0002921e78.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/DebugFloors/CheckerVariantGreen.png"
-dest_files=["res://.godot/imported/CheckerVariantGreen.png-03128fbfbb51f62ca7730cc270d1b8aa.s3tc.ctex"]
+source_file="res://textures/DebugFloors/CheckerVariantGreen.png"
+dest_files=["res://.godot/imported/CheckerVariantGreen.png-6fe7fafa2d63547074125a0002921e78.s3tc.ctex"]
 
 [params]
 
