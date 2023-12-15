@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://bpc13ictkkiaf"
+path="res://.godot/imported/gay2.map-cc4f559cfccf3155cd2e7ad0a5feeeaf.tres"
+
+[deps]
+
+source_file="res://Map/MapTest1/gay2.map"
+dest_files=["res://.godot/imported/gay2.map-cc4f559cfccf3155cd2e7ad0a5feeeaf.tres"]
+
+[params]
+
