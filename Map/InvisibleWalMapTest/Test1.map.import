@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://bk3ve7n5lgi7a"
+path="res://.godot/imported/Test1.map-2fb0a9e7aa3bef39966fbfa0ddbb2e36.tres"
+
+[deps]
+
+source_file="res://Map/InvisibleWalMapTest/Test1.map"
+dest_files=["res://.godot/imported/Test1.map-2fb0a9e7aa3bef39966fbfa0ddbb2e36.tres"]
+
+[params]
+

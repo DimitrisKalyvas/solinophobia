@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmne63fg4lds1"
-path="res://.godot/imported/MossyConc4.jpg-3c5ed337ecfafbe618f0c8176d11e138.ctex"
+uid="uid://5lgtd2efvf6g"
+path="res://.godot/imported/InvisibleWall.png-a885315f789d10883eb1e4c01fb78375.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Concrete/Mossy/MossyConc4.jpg"
-dest_files=["res://.godot/imported/MossyConc4.jpg-3c5ed337ecfafbe618f0c8176d11e138.ctex"]
+source_file="res://Textures/Special/InvisibleWall.png"
+dest_files=["res://.godot/imported/InvisibleWall.png-a885315f789d10883eb1e4c01fb78375.ctex"]
 
 [params]
 

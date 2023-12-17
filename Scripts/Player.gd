@@ -116,7 +116,6 @@ func _physics_process(delta):
 		if Interactor.get_collider().is_in_group("Interactible"):
 			#CurrentCollider(Interactor.get_collider())
 			#(Interactor.get_collider()).emit()
-			
 			$InteractIcon.visible=true
 		else:
 			$InteractIcon.visible=false
